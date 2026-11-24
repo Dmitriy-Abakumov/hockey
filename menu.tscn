@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dsn6kkks88feq"]
+
+[ext_resource type="Script" uid="uid://cmp88vmeu5qym" path="res://menu.gd" id="1_lti8b"]
+
+[node name="Menu" type="Node2D" unique_id=537462425]
+script = ExtResource("1_lti8b")
+
+[node name="Button" type="Button" parent="." unique_id=669875574]
+offset_left = 402.0
+offset_top = 249.0
+offset_right = 738.0
+offset_bottom = 394.0
+theme_override_font_sizes/font_size = 80
+text = "Играть"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
