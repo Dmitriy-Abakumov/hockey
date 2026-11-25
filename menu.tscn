@@ -1,9 +1,15 @@
 [gd_scene format=3 uid="uid://dsn6kkks88feq"]
 
-[ext_resource type="Script" uid="uid://cmp88vmeu5qym" path="res://menu.gd" id="1_lti8b"]
+[sub_resource type="GDScript" id="GDScript_vsb4k"]
+script/source = "extends Node2D
+
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://game.tscn\")
+"
 
 [node name="Menu" type="Node2D" unique_id=537462425]
-script = ExtResource("1_lti8b")
+script = SubResource("GDScript_vsb4k")
 
 [node name="Button" type="Button" parent="." unique_id=669875574]
 offset_left = 402.0
