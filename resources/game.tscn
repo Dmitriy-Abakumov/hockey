@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dim2kn4gsa0b1"]
 
 [ext_resource type="TileSet" uid="uid://dhf2xrkjss11b" path="res://resources/new_tile_set.tres" id="1_xyldu"]
+[ext_resource type="PackedScene" uid="uid://bfjvg3up5hva0" path="res://player_1.tscn" id="2_6xdbb"]
 
 [node name="game" type="Node2D" unique_id=2018323317]
 
@@ -14,3 +15,6 @@ layer_0/tile_data = PackedInt32Array(393222, 65536, 1, 524294, 65536, 2, 655366,
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Rink" unique_id=2078776370]
 build_mode = 1
 polygon = PackedVector2Array(148, 100, 371, 100, 638, 100, 654, 108, 669, 117, 681, 131, 689, 145, 692, 159, 692, 339, 687, 355, 678, 370, 665, 382, 651, 390, 639, 396, 406, 396, 148, 396, 133, 388, 118, 379, 105, 365, 97, 350, 95, 336, 94, 161, 98, 140, 107, 125, 121, 114, 134, 106)
+
+[node name="Player1" parent="." unique_id=694187112 instance=ExtResource("2_6xdbb")]
+position = Vector2(217, 216)
